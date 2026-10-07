@@ -1,0 +1,345 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    line-height: 1.6;
+    padding-top: 90px; /* Creates space for fixed navbar */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+p {
+    color: #64748b;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.nav-link {
+    margin-left: 20px;
+    color: #334155;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #2563eb 0%,
+        #4f46e5 35%,
+        #7c3aed 70%,
+        #06b6d4 100%
+    );
+    padding: 120px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-label {
+     color: #f4f4f5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.section-label,
+.cta-label {
+    color: #0000da;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.hero h1 span,
+.section-heading h2 span {
+    display: block;
+    color: #d0ff12;
+}
+
+.hero-text {
+    max-width: 550px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.hero-card {
+    background: white;
+    padding: 60px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card h3 {
+    margin: 20px 0 10px;
+}
+
+.technology-icon {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ================= CAROUSEL ================= */
+
+#carouselExampleRide {
+    border: 2px solid #f4f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#carouselExampleRide img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 80px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: auto;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+
+/* ================= ABOUT ================= */
+
+#about h2 {
+    font-size: 38px;
+    margin: 10px 0 20px;
+}
+
+.stats-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 35px;
+    background: #f5f9ff;
+    border-radius: 15px;
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+}
+
+.stat h3 {
+    color: #0d6efd;
+    font-size: 32px;
+}
+
+.stat p {
+    font-size: 14px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.service-card {
+    height: 100%;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-number {
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    margin-bottom: 12px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.feature-card {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.feature-card h3 {
+    color: #0d6efd;
+    font-size: 32px;
+}
+
+.feature-card h4 {
+    margin: 15px 0 10px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+    padding: 80px 20px;
+    background: #0d6efd;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.cta p {
+    color: #eaf2ff;
+}
+
+.cta-label {
+    color: white;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 35px 0;
+    background: #111827;
+}
+
+footer h5 {
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+
+@media (max-width: 991px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .hero {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons .btn {
+        margin: 5px;
+    }
+
+    .stats-box {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2,
+    #about h2 {
+        font-size: 30px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
